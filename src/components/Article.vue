@@ -29,8 +29,8 @@ function reset() {
         <p>Saisir la quantité d'huile d'olive</p>
       </div>
       <div class="col">
-        <input type="number" v-model="huile" />
-        <button class="btn btn-primary" @click="calculeSoude">Calculer</button>
+        <input class="form-control mb-3" type="number" v-model="huile" />
+        <button class="btn btn-primary m-1" @click="calculeSoude">Calculer</button>
         <button class="btn btn-danger" @click="reset">Reset</button>
       </div>
     </div>
