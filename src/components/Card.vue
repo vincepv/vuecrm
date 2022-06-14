@@ -1,11 +1,11 @@
 <template>
-  <div class="card m-2">
+  <div class="card m-3">
     <div class="card-body">
       
-      <h5 class="card-title">{{ title }} {{id}}</h5>
+      <p class="card-title fs-5">{{ title }} {{id}}</p>
       <p class="text-muted">from: {{ contact }} {{dateStart}} </p>
       <p class="badge bg-secondary">{{ departement }}</p>
-      
+      <i class="bi bi-paperclip"></i>
       <div class="row">
         <div class="col d-grid gap-2 ">
           <button type="button" class="btn btn-primary ">Edit</button>
