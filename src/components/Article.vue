@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import Contact from "./Contact.vue";
 import Artist from "./Artist.vue";
-import ResultSoude from "./resultSoude.vue";
+import ResultSoude from "./ResultSoude.vue";
 
 // reactive state
 

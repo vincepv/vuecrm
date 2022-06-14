@@ -1,19 +1,46 @@
 <script setup>
 import Card from '@/components/Card.vue'
 
+const totalPending = 16;
+const totalReview = 3;
+const totalSent = 8;
+const totalTodo = 24;
+
 </script>
 
 <template>
-  <h1>Homepage</h1>
-  <p>Hello world</p>
-  <div>
-    <h2>Example heading <b-badge>New</b-badge></h2>
-    <h3>Example heading <b-badge>New</b-badge></h3>
-    <h4>Example heading <b-badge>New</b-badge></h4>
-    <h5>Example heading <b-badge>New</b-badge></h5>
-    <h6>Example heading <b-badge>New</b-badge></h6>
+  <div class="container">
+  <h1 class="m-5">Workflow of the week</h1>
+  <div class="row">
+
+    
+    <div class="col bg-light m-2">
+      <h2>To Do {{totalTodo}}</h2>
+      <div >
+        <Card />
+        <Card />
+      </div>
+      
+    </div>
+    <div class="col bg-light m-2">
+      <h2>Pending {{totalPending}} </h2>
+      <Card />
+      
+    </div>
+    <div class="col bg-light m-2">
+      <h2>Review {{totalReview}} </h2>
+      <Card />
+      <Card />
+    </div>
+    <div class="col bg-light m-2">
+      <h2>Need to send {{totalSent}} </h2>
+      <Card />
+      <Card />
+      <Card />
+    </div>
   </div>
 
+  </div>
+ 
 
-  <Card ></Card>
 </template>
