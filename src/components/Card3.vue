@@ -2,7 +2,7 @@
   <div class="card m-3">
     <div class="card-body">
       <p class="card-title fs-6 fw-bold">
-        <i class="bi bi-person"></i>
+        <i class="bi bi-people-fill"></i>
         {{ title }} {{ id }}
       </p>
       <p id="description" class="text-muted fw-light">from: {{ contact }} {{ dateStart }}</p>
