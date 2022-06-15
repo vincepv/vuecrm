@@ -8,7 +8,7 @@
       <p class="text-muted fw-light">from: {{ contact }} {{dateStart}} </p>
       <div class="row">
         <div class="col">
-          <p class="badge rounded-pill bg-secondary">{{ departement }}</p>
+          <p class="badge rounded-pill bg-info">{{ departement }}</p>
         </div>
         <div class="col d-flex justify-content-end">
           <i class="bi bi-three-dots-vertical"></i>

@@ -4,8 +4,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div class="row">
-  <header class="col-1">
-    <div class="m-2">
+  <header class="col-1 bg-light ">
+    <div class="ps-2">
       <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
       <div>
         <nav class="fs-5 d-flex flex-column  ">
@@ -24,6 +24,11 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </template>
 
-<style>
+<style scoped>
+
+header {
+  height: 100vh;
+}
 
 </style>
+

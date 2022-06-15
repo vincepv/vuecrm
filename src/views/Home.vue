@@ -11,7 +11,7 @@ const totalTodo = 24;
 
 <template>
   <div class="container">
-    <h2 class="mb-5">Dashboard Request</h2>
+    <h2 class="my-2">Dashboard Request</h2>
 
     <div class="row">
       <div class="col">

@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from "vue";
-import Contact from "./Contact.vue";
-import Artist from "./Artist.vue";
-import ResultSoude from "./ResultSoude.vue";
+import Contact from "@/components/Contact.vue";
+import Artist from "@/components/Artist.vue";
+import ResultSoude from '@/components/ResultSoude.vue'
 
 // reactive state
 
