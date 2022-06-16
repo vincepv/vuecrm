@@ -17,7 +17,7 @@ const totalTodo = 24;
   
     <Header />
   
-    <h2 class="mb-4">Dashboard Request</h2>
+    <p class="display-6 mb-4">Dashboard Request</p>
 
     <div class="row">
       <div class="col">

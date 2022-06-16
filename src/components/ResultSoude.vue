@@ -1,54 +1,23 @@
-<template>
-
-<table>
-  <tr>
-    <th>Quantité huile</th>
-    <th>Quantité soude</th>
-    <th>Surgras</th>
-  </tr>
-  <tr>
-    <td>{{huile}}</td>
-    <td>{{soude}}</td>
-    <td>0%</td>
-  </tr>
-  <tr>
-    <td>{{huile}}</td>
-    <td>{{soude*0.99}}</td>
-    <td>1%</td>
-  </tr>
-  <tr>
-    <td>{{huile}}</td>
-    <td>{{soude*0.98}}</td>
-    <td>2%</td>
-  </tr>
-  <tr>
-    <td>{{huile}}</td>
-    <td>{{soude*0.97}}</td>
-    <td>3%</td>
-  </tr>
-  <tr>
-    <td>{{huile}}</td>
-    <td>{{soude*0.97}}</td>
-    <td>3%</td>
-  </tr>
-
-</table>
-
-<p v-for="indice in surgras" :key="indice.id">{{indice}} </p>
-  
-</template>
-
 <script setup>
-
 const props = defineProps({
-  huile : Number,
-  soude : Number,
-})
+  huile: Number,
+  soude: Number,
+});
 
-const surgras = [0.99,0.98,0.97]
-
+const surgras = [0.99, 0.98, 0.97, 0.96, 0.95];
 </script>
 
-<style>
-
-</style>
+<template>
+  <table>
+    <tr>
+      <th>Indice surgras %</th>
+      <th>Quantité soude (g)</th>
+      <th>Quantité huile (g)</th>
+    </tr>
+    <tr v-for="indice in surgras" :key="indice.id">
+      <td>{{ Math.floor((1 - indice) * 100) }}</td>
+      <td>{{ Math.floor(soude * indice) }}</td>
+      <td>{{ huile }}</td>
+    </tr>
+  </table>
+</template>
