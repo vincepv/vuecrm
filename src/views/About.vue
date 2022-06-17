@@ -2,10 +2,15 @@
 import {ref} from 'vue';
 import Sold from '@/components/Sold.vue';
 import Condition from '@/components/Condition.vue';
-import {useProductStore} from '@/stores/ProductStore.js';
+import { useProductStore } from '@/stores/ProductStore.js';
 
-const store = useProductStore();
 const  title = ref("Default title");
+
+// make reactive store changes
+const store = useProductStore();
+
+// use method of the store
+store.fill();
 
 </script>
 
@@ -20,10 +25,10 @@ const  title = ref("Default title");
   <Condition />
 
   <h2>Store pinia test</h2>
-  <p v-for="product in store.products" :key="product.name">
+  <div v-for="product in store.products" :key="product.name">
     Produit : {{product.name}} /
     Price €: {{product.price}} 
-  </p>
+  </div>
 </template>
 
 
