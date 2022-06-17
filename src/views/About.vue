@@ -17,17 +17,19 @@ store.fill();
 
 <template>
   <div>
-    <h1>About us</h1>
-    <p >-50% SALES</p>
-    <h1>{{title}}</h1>
+    <h1 class="mt-5">Emit example: pass data from child to parent</h1>
+    <h5>{{title}}</h5>
   </div>
   <Sold @changetitle = "(n)=> title = n" @resettitle="(n)=>title=n"/>
+  <hr>
+  <h1>Conditional rendering</h1>
   <Condition />
-
-  <h2>Store pinia test</h2>
+  <hr>
+  <h2>State management : get value from store Pinia</h2>
   <div v-for="product in store.products" :key="product.name">
     Produit : {{product.name}} /
-    Price €: {{product.price}} 
+    Price €: {{product.price}} /
+    RefId : {{product.id}}
   </div>
 </template>
 

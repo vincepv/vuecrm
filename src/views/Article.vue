@@ -36,9 +36,10 @@ function reset() {
     </div>
 
     <ResultSoude :huile="huile" :soude="soude"></ResultSoude>
-
+    <hr>
+    <h1>Props</h1>
     <Contact prenom="Lapape" nom="Marc" age="41" />
-
+    <h1>v-for</h1>
     <Artist />
   </div>
 </template>

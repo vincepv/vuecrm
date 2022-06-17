@@ -7,14 +7,14 @@ const isLogIn = ref(true);
 </script>
 
 <template>
-  <p>Composant avec des conditions d'affichage</p>
+  <p>Click for condition</p>
 
   <div v-if="isLogIn">
-    <h1>Vous êtes bien identifié</h1>
+    <h5>Vous êtes bien identifié</h5>
   </div>
 
   <div v-else>
-    <h1>Identifiez-vous</h1>
+    <h5>Identifiez-vous</h5>
     <p>Saisir votre mot de passe / login</p>
   </div>
 
