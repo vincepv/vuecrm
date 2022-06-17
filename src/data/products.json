@@ -1,0 +1,24 @@
+[
+  {
+    "name":"guitare Fender",
+    "price": 189,
+    "id":"fendSTR"
+  },
+  {
+    "name":"guitare Gibson",
+    "price": 2819,
+    "id":"les18"
+  },
+  {
+    "name":"basse Kort",
+    "price": 99,
+    "id":"bKT0"
+  },
+  {
+    "name":"clarinette",
+    "price": 99,
+    "id":"clARR"
+  }
+
+
+]
