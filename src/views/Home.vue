@@ -96,7 +96,7 @@ const totalTodo = 24;
 
 <style scoped>
 .scroller {
-  height: 66vh;
+  height: 60vh;
   overflow-y: scroll;
   scrollbar-color: rgb(94, 94, 94) rgb(249, 249, 249);
   scrollbar-width: thin;

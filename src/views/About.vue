@@ -3,7 +3,7 @@ import {ref} from 'vue';
 import Sold from '@/components/Sold.vue';
 import Condition from '@/components/Condition.vue';
 import { useProductStore } from '@/stores/ProductStore.js';
-
+import Modal from '@/components/Modal.vue';
 const  title = ref("Default title");
 
 // make reactive store changes
@@ -16,6 +16,7 @@ store.fill();
 
 
 <template>
+  <Modal/>
   <div>
     <h1 class="mt-5">Emit example: pass data from child to parent</h1>
     <h5>{{title}}</h5>
