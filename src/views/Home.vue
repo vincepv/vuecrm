@@ -20,6 +20,9 @@ const totalTodo = 24;
     <p class="display-6 mb-4">Dashboard Request</p>
 
     <div class="row">
+      <div class="col d-flex justify-content">
+        <button type="button" class="btn btn-primary">+ Add ticket</button>
+      </div>
       <div class="col">
         <div class="input-group">
           <span class="input-group-text">
@@ -33,16 +36,13 @@ const totalTodo = 24;
           />
         </div>
       </div>
-      <div class="col d-flex justify-content-end">
-        <button type="button" class="btn btn-primary">+ Add ticket</button>
-      </div>
     </div>
 
-    <div class="row mt-5">
-      <div class=" col ">
-        <h5 class="m-3" >To Do: {{ totalTodo }}</h5>
+    <div class="row mt-5 ">
+      <div class="col bg-light rounded-3 m-2">
+        <h6 class="m-3 text-muted" >TO DO: {{ totalTodo }}</h6>
         <hr>
-        <div class="scroller bg-light m-2 rounded-3">
+        <div class="scroller">
           <Card2 />
           <Card3 />
           <Card />
@@ -52,10 +52,10 @@ const totalTodo = 24;
         </div>
       </div>
 
-      <div class="col ">
-        <h5 class="m-3">Pending: {{ totalPending }}</h5>
+      <div class="col bg-light rounded-3 m-2">
+        <h6 class="m-3 text-muted">PENDING {{ totalPending }}</h6>
         <hr>
-        <div class="scroller col bg-light m-2 rounded-3">
+        <div class="scroller">
           <Card3 />
           <Card2 />
           <Card2 />
@@ -65,10 +65,10 @@ const totalTodo = 24;
         </div>
       </div>
 
-      <div class="col ">
-        <h5 class="m-3">Review: {{ totalReview }}</h5>
+      <div class="col bg-light rounded-3 m-2 ">
+        <h6 class="m-3 text-muted">REVIEW {{ totalReview }}</h6>
         <hr>
-        <div class="scroller col bg-light m-2 rounded-3">
+        <div class="scroller">
           <Card3 />
           <Card2 />
           <Card2 />
@@ -77,10 +77,10 @@ const totalTodo = 24;
           <Card2 />
         </div>
       </div>
-      <div class="col ">
-        <h5 class="m-3">Sent: {{ totalSent }}</h5>
+      <div class="col bg-light rounded-3 m-2  ">
+        <h6 class="m-3 text-muted">SENT {{ totalSent }}</h6>
         <hr>
-        <div class="scroller col bg-light m-2 rounded-3">
+        <div class="scroller">
           <Card3 />
           <Card2 />
           <Card2 />
