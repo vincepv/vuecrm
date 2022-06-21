@@ -1,6 +1,6 @@
 # vuecrm
 
-This template should help get you started developing with Vue 3 in Vite.
+vue 3 training, test router, store, state, emit, props, bootstrap...
 
 ## Recommended IDE Setup
 
